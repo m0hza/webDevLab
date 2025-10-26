@@ -716,7 +716,7 @@ height: 100%;
   margin: 30px 15px 30px 0;
   transition: .5s ease;
   opacity: 0;
-  animation: sliderLeft 1s ease forwards;            /* USE your existing keyframe */
+  animation: sliderLeft 1s ease forwards;           
   animation-delay: calc(.2s * var(--i, 1));          /* correct var syntax + default */
 }
 .contact-icons a:hover{
@@ -754,7 +754,7 @@ height: 100%;
   text-decoration: none;
   font-weight: 600;
   opacity: 0;
-  animation: sliderTop 1s ease forwards;            /* USE your existing keyframe */
+  animation: sliderTop 1s ease forwards;            
   animation-delay: 0.8s;
   box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
 }
@@ -770,13 +770,22 @@ height: 100%;
 
 
 
-.last-text p{
-width: 100%;
-text-align: center;
-padding: 25px e;
-background: Orgb(7, 85, 91);
-font-weight: 300;
-margin-top: 70px;}
+.last-text {
+  flex-basis: 100%;        
+  grid-column: 1 / -1;    
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+
+  padding: 25px 0;
+  margin-top: 70px;
+}
+
+.last-text p {
+  margin: 0;
+  color: #fff;
+  font-weight: 300;
+}
 
 
 .top{
